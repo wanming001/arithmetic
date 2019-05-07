@@ -24,11 +24,11 @@ public class BinarySearch {
             //中间索引
             int mid = (start+end)/2;
             if(a[mid]>b){
-                //由于是/2操作中间索引会往左靠.那么start和end必须比实际远离一个的单位
-                end = mid+1;
+
+                end = mid-1;
             }else if (a[mid]<b){
 
-                start=mid-1;
+                start=mid+1;
             }else {
                 //找到数据
                 return mid;
