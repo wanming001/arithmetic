@@ -24,10 +24,8 @@ public class BinarySearch {
             //中间索引
             int mid = (start+end)/2;
             if(a[mid]>b){
-
                 end = mid-1;
             }else if (a[mid]<b){
-
                 start=mid+1;
             }else {
                 //找到数据
